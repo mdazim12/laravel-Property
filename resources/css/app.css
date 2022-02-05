@@ -1,3 +1,44 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.container{
+    margin:0 auto;
+    max-width: 1200px;
+}
+@font-face {
+    font-family: 'Liberation Sans';
+    src: url('../fonts/LiberationSans-Regular.woff2') format('woff2'),
+        url('../fonts/LiberationSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Liberation Sans';
+    src: url('../fonts/LiberationSans-Bold.woff2') format('woff2'),
+        url('../fonts/LiberationSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Studio Sans DEMO';
+    src: url('../fonts/StudioSansDEMO.woff2') format('woff2'),
+        url('../fonts/StudioSansDEMO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:'Liberation Sans',sans-serif ;
+    font-weight: bold;
+}
+.section-heading{
+  @apply font-bold text-center text-5xl mb-10
+}
+.full-btn{
+    @apply bg-gray-500 text-white px-6 py-2 rounded w-full inline-block
+}
